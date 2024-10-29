@@ -1,0 +1,6 @@
+@RasporedZvonjenja_HostAddress = http://localhost:5147
+
+GET {{RasporedZvonjenja_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

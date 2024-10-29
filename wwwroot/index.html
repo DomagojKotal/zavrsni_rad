@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Duty Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="schedulePage">
+    <header>
+        <h1>Raspored dežurstva</h1>
+    </header>
+    <nav>
+        <a href="ucenici.html">Upravljaj učenicima</a>
+        <a href="profesori.html">Upravljaj profesorima</a>
+        <a href="izuzeci.html">Upravljaj izuzecima</a>
+        <a href="/ER_diagram.png">ER Diagram</a>
+        <a href="https://github.com/DomagojKotal">GitHub</a> 
+    </nav>
+    <main>
+        <h2>Daily Schedule</h2>
+        <label for="dateSelect">Odaberite datum:</label>
+        <input type="date" id="dateSelect">
+        <button onclick="loadSchedule()">Prikaži raspored</button>
+
+        <h3>Raspored za <span id="selectedDate"></span></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Smjena</th>
+                    <th>Učenik</th>
+                    <th>Razred</th>
+                    <th>Profesor</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleTableBody"></tbody>
+        </table>
+    </main>
+    <footer>
+        &copy; 2024 Raspored zvonjenja
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

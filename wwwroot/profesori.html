@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Professors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="professorsPage">
+    <header>
+        <h1>Upravljaj profesorima</h1>
+    </header>
+    <nav>
+        <a href="index.html">Pogledaj raspored</a>
+        <a href="ucenici.html">Upravljaj učenicima</a>
+        <a href="izuzeci.html">Upravljaj izuzecima</a>
+    </nav>
+    <main>
+        <h2>Lista profesora</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>Predmet</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody id="professorsTableBody"></tbody>
+        </table>
+
+        <h2>Dodaj / Upravljaj profesorima</h2>
+        <form id="professorForm">
+            <input type="hidden" id="professorId">
+            <label for="professorFirstName">Ime:</label>
+            <input type="text" id="professorFirstName" required>
+            <label for="professorLastName">Prezime:</label>
+            <input type="text" id="professorLastName" required>
+            <label for="subject">Predmet:</label>
+            <input type="text" id="subject" required>
+            <button type="submit">Spremi</button>
+            <button type="button" id="cancelProfessorEdit">Otkaži</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 Raspored Zvonjenja
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
